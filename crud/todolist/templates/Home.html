@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<body style="background-image: url(/static/images/biruu.jpg) ; background-size: 1400px 700px;">
+
+    <div class="col-20 text">
+        <br> <br>
+        <center>
+            <h1 style="color: rgb(21, 32, 51) ;">Taman Qoryatussalam</h1>
+        </center>
+    </div>
+    <li class="nav ">
+        <div>
+            <div class="container">
+                <div class="sidebar">
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                        </section>
+                    </div>
+                    <br> <br>
+
+                    <center>
+                        <div class="container ms-5 ">
+                            <div class="row">
+                               
+                               {% for d in data %}
+                               <div class="col">
+                                <div class="card" style="width: 18rem;">
+                                    <img src="/{{d.images}}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">{{d.nama}}</h5>
+                                        <p class="card-text">Tanaman ini ditemukan di sekitar pesantren sejumlah {{d.jumlah}}</p>
+                                        <a href="/Tanaman_Hias" class="btn btn-primary">Lihat selengkapnya</a>
+                                    </div>
+                                </div>
+                            </div>
+                               {% endfor %}
+                            </div>
+                        </div>
+                    </center>
+
+</body>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends 'todolist.template' %}
+{% block content %}
+
+<h2>detail</h2>
+{{d.Id}}
+{{d.nama}}
+{{d.nama_latin}}
+{{d.cara_perawatan}}
+{{d.images}}
+<img src="/{{d.images}}" alt="">
+
+{% endblock %}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>tanaman</title>
+</head>
+<body style="background-image: url(/static/images/biruu.jpg) ; background-size: 1400px 700px;">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<div>
+    <!-- <img src="{% static 'images/photo1.jpeg' %}" width="400" height="560">
+    <img src="{% static 'images/cc.png' %}" width="400" height="560"> -->
+</div>
+<br>  
+<center>
+    <h1 style="color: rgb(21, 32, 51) ;">Taman Qoryatussalam</h1>
+</center> 
+<div class="card text-center">
+  
+
+    <center>
+        <div class="container">
+            <div class="row">
+                <class class="col">
+                    <a href="/Tanaman_Hias">
+                        <a class="nav-link" href="/Tanaman_Hias">Tanaman Hias</a>
+                    </a>
+                </class>
+                <class class="col">
+                    <a href="/TanamanBuah">
+                        <a class="nav-link" href="/TanamanBuah">Tanaman Buah</a>
+                    </a>
+                </class>
+                <class class="col">
+                    <a href="/TanamanSayur">
+                        <a class="nav-link" href="/TanamanSayur">Tanaman Sayur</a>
+                    </a>
+                </class>
+                <class class="col">
+                    <a href="/lainlain">
+                        <a class="nav-link" href="/lainlain">Tanaman Lain</a>
+                    </a>
+                </class>
+            </div>
+        </div>
+        
+    </center>
+
+    </div>
+    </div>
+</div>
+<br>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <center>
+        <img src="{% static 'images/galeri.jpg' %}" width="1116" height="560">
+    </center>
+</body>
+<br> <br>
+{% endblock %}
+</html>
